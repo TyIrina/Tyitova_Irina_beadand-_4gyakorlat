@@ -73,15 +73,15 @@ print(f"{alap}^{kitevő} = {hátvány}")
 
 #27. Feladat
 #Írj programot, mely kiírja a Vigenère-táblát! Az első sor az angol ABC betűit tartalmazza, majd minden további sorban az ABC az előző sorhoz képest egyel eltolva szerepel.
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-BCDEFGHIJKLMNOPQRSTUVWXYZA
-CDEFGHIJKLMNOPQRSTUVWXYZAB
-DEFGHIJKLMNOPQRSTUVWXYZABC
-EFGHIJKLMNOPQRSTUVWXYZABCD
-FGHIJKLMNOPQRSTUVWXYZABCDE
+#ABCDEFGHIJKLMNOPQRSTUVWXYZ
+#BCDEFGHIJKLMNOPQRSTUVWXYZA
+#CDEFGHIJKLMNOPQRSTUVWXYZAB
+#DEFGHIJKLMNOPQRSTUVWXYZABC
+#EFGHIJKLMNOPQRSTUVWXYZABCD
+#FGHIJKLMNOPQRSTUVWXYZABCDE
 
 
 abc= "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 for i in range(26):
-    shifted_alphabet = alphabet[i:] + alphabet[:i]
+    shifted_alphabet = abc[i:] + abc[:i]
     print(shifted_alphabet)
